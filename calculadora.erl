@@ -29,13 +29,21 @@ p(Str) ->
 
 % Funções de cálculo
 divisao(_, 0) -> division_by_zero;
-divisao(A, B) -> A / B.
+divisao(A, B) -> 
+    io:format("divisao: ~p / ~p = ~p \n", [A, B, A/B]),
+    A / B.
 
-multiplicacao(A, B) -> A * B.
+multiplicacao(A, B) ->
+    io:format("multiplicacao: ~p * ~p = ~p \n", [A, B, A*B]),
+    A * B.
 
-soma(A, B) -> A + B.
+soma(A, B) ->
+    io:format("soma: ~p + ~p = ~p \n", [A, B, A+B]),
+    A + B.
 
-subtracao(A, B) -> A - B.
+subtracao(A, B) ->
+    io:format("subtracao: ~p - ~p = ~p \n", [A, B, A-B]),
+    A - B.
 
 % Operador para cálculo.
 % É feita a verificação do operador, sendo atribuido a uma variavel - 'Stack' - o 
